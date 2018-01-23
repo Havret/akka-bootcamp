@@ -4,7 +4,7 @@ using Akka.Actor;
 
 namespace WinTail
 {
-    public class TailActor: UntypedActor
+    public class TailActor : UntypedActor
     {
         #region Message types
 
@@ -72,8 +72,7 @@ namespace WinTail
 
             // open the file stream with shared read/write permissions
             // (so file can be written to while open)
-            _fileStream = new FileStream(Path.GetFullPath(_filePath),
-                FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+            _fileStream = new FileStream(Path.GetFullPath(_filePath), FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
             _fileStreamReader = new StreamReader(_fileStream, Encoding.UTF8);
 
             // read the initial contents of the file and send it to console as first msg
