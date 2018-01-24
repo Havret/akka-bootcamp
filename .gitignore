@@ -183,3 +183,4 @@ UpgradeLog*.htm
 # Microsoft Fakes
 FakesAssemblies/
 src/Unit-1/DoThis/.vs/
+src/Unit-2/DoThis/.vs/
